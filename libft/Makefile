@@ -6,7 +6,7 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/26 13:57:50 by tblaase           #+#    #+#              #
-#    Updated: 2021/07/16 11:09:23 by tblaase          ###   ########.fr        #
+#    Updated: 2021/07/22 11:40:04 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,11 +62,8 @@ all: $(NAME)
 
 bonus: all
 
-$(NAME): compile
+$(NAME): $(OBJECTS)
 	ar -rcs $(NAME) $(OBJECTS)
-
-compile:
-	$(CC) $(CFLAGS) $(CFILES)
 
 clean:
 	rm -f $(OBJECTS)

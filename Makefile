@@ -6,7 +6,7 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/02 10:52:19 by tblaase           #+#    #+#              #
-#    Updated: 2021/07/16 11:09:19 by tblaase          ###   ########.fr        #
+#    Updated: 2021/07/22 11:39:13 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,8 +37,6 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -c
 
-MAIN = main
-
 all: subsystem $(NAME)
 
 subsystem:
@@ -46,11 +44,8 @@ subsystem:
 
 bonus: all
 
-$(NAME): compile
+$(NAME): $(OBJECTS)
 	ar -rcs $(NAME) $(OBJECTS) $(LIB_PATH)/*.o
-
-compile:
-	$(CC) $(CFLAGS) $(CFILES)
 
 clean:
 	$(MAKE) -C $(LIB_PATH) clean
