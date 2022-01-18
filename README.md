@@ -5,7 +5,7 @@ This is my solution of ft_printf of 42 school.
 ## Note
 This was my second ever project of 42 school.<br>
 The quality of the code may look very bad, but it was the best i was able to do back then.<br>
-By now (6 Months later) i would like to believe that the way i code has changed a bit.<br>
+By now (6 months later) i would like to believe that the way i code has changed a bit.<br>
 But i will still leave this project in its original state, since this is how i solved the project.<br>
 Today i would definitley solve it differently.<br>
 
