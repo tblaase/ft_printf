@@ -15,7 +15,7 @@ This is not a complete programm, but rather a library, which when compiled can b
 1. run `make` or `make all` in the root of this directory
 2. inlcude `libftprintf.h` into your file that you want to use `ft_printf` in
 3. when compiling, include `libftprintf.a` into it like `gcc main.c libftprintf.a`
-4. enjoy some of the behaviour of printf with only using the external functions stated in the [subject.pdf](https://github.com/tblaase/ft_printf/blob/master/readme_additions/en.subject.pdf)
+4. enjoy some of the behaviour of printf with only using the external functions stated in the subject.pdf
 <img src="readme_additions/functions.png" width="400"/>
 
 
